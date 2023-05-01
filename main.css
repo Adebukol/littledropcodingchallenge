@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 body{
-  background: #bbc6fa;
+  background: #a4dfe2;
 }
-.quote-box{
+.quote-container{
   background: #fff;
   width:700px;
   position:absolute;
@@ -18,12 +18,12 @@ body{
   text-align: center;
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
 }
-.quote-box h2{
+.quote-container h2{
   font-size: 32px;
   margin-bottom: 40px;
   position: relative;
 }
-.quote-box h2::after{
+.quote-container h2::after{
   content: '';
   width: 75px;
   height: 3px;
@@ -34,21 +34,21 @@ body{
   left: 50%;
   transform: translateX(-50%);
 }
-.quote-box blockquote{
+.quote-container blockquote{
   font-size: 26px;
   min-height: 110px;
 }
-.quote-box blockquote::before, .quote-box blockquote::after{
+.quote-container blockquote::before, .quote-container blockquote::after{
 content: "";
 }
-.quote-box span{
+.quote-container span{
   display: block;
   margin-top: 10px;
   float: right;
   position: relative;
 
 }
-.quote-box span::before{
+.quote-container span::before{
   content: '';
   width: 20px;
   height: 2px;
@@ -57,13 +57,13 @@ content: "";
   top: 50%;
   left: -30px;
 }
-.quote-box div{
+.quote-container div{
   width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-.quote-box button{
+.quote-container button{
   background: rgb(23, 124, 229);
   color: #fff;
   border-radius: 25px;
@@ -76,11 +76,14 @@ content: "";
   margin: 5px;
   cursor: pointer;
 }
-.quote-box button img{
+.quote-container button img{
   width: 20px;
   margin-right: 10px;
 }
-.quote-box button:nth-child(2){
+.quote-container button:nth-child(2){
   background: transparent;
   color: #333;
+}
+button{
+  font-size: 15px;
 }
